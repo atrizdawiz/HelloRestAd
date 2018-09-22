@@ -1,19 +1,10 @@
 public class Ad {
     // variable declarations
-    int id=1;
-	
+    int id=0;
 	enum Category{
-		GUITAR(1), BRASS(2), SYNTHESIZER(3), EFFECT_PEDAL(4);
-		Category(int categoryNumber) {
-			this.categorySelection = categorySelection;
+		GUITAR, BRASS, SYNTHESIZER, EFFECT_PEDAL
 		}
-		private final int categorySelection;
-		
-		public int getCategorySelection(){
-				return categorySelection;
-		}	
-	}
-	String category;
+
     String title; 
 	String body;
 	String userName;
@@ -22,7 +13,7 @@ public class Ad {
 	String imageUrl;
 	
 	// Constructors
-	Ad(int categorySelection, String titleSelection, String bodySelection, String userNameSelection, 
+	Ad(String titleSelection, String bodySelection, String userNameSelection,
 		String userEmailSelection, String userPhoneNumberSelection, String imageUrlSelection) {
 		this.id = id;
 		title = titleSelection;
